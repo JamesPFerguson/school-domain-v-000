@@ -18,4 +18,16 @@ class School
 
     @roster[:grade] << student_name
 
+  end
+
+  def grade(grade)
+    @roster(grade)
+  end
+
+
+  def sort
+  @roster.each do |grade|
+    grade.sort
+  end
+  
 end
